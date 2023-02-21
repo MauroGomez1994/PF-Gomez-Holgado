@@ -1,0 +1,9 @@
+/*ANIMACION CARDS (PAGINA PRODUCTOS)*/
+
+.card:hover{
+    transform: scale(1.03);
+}
+
+.card {
+    transition: all 0.5s;
+}

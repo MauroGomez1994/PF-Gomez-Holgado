@@ -1,0 +1,33 @@
+@import "../vars/variables";
+
+/*Estilos de pagina CONTACTO*/  
+
+aside{
+    .container-info{
+        background-color: $color-secundario;
+        display: flex;
+        padding-top: 10px;
+        justify-content: space-around;}
+
+
+    .form-div {
+            width: 400px;
+            padding-bottom: 16px;
+        }   
+
+        .feedback-input {
+            color:#000000;
+            font-family: Helvetica, Arial, sans-serif;
+            font-weight:500;
+            font-size: 1rem;
+            background-color: #fbfbfb;
+            padding: 13px 13px;
+            width:100%;
+        }
+        
+        textarea {
+            width: 100%;
+            height: 150px;
+        }
+
+}

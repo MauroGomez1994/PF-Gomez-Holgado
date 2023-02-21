@@ -1,0 +1,12 @@
+@mixin medidas ($ancho, $alto){
+    width: $ancho;
+    height: $alto;
+}
+
+@mixin grid{display: grid;
+    gap: 10px;
+    height: 100%;
+    font-size: 18px;
+    margin-top: 10px;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;}
