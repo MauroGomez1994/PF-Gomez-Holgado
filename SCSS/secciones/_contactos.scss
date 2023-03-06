@@ -3,6 +3,16 @@
 /*Estilos de pagina CONTACTO*/  
 
 aside{
+    .container-info{padding: 10px;
+        .info{
+            div{
+                h3{text-decoration: underline;}
+            }
+        }
+    }
+}
+
+aside{
     .container-info{
         background-color: $color-secundario;
         display: flex;
@@ -31,3 +41,28 @@ aside{
         }
 
 }
+
+aside{
+    .titulo-contacto{
+        display: flex;
+        background-color: $color-secundario;
+        color: $color-principal;
+        padding: 1rem;
+        align-items: center;
+        justify-content: center;
+        text-decoration: underline;
+    
+    }
+}
+
+/*Mediaqueries de pagina Contactos*/
+
+@media screen and (max-width:700px){
+
+    body{
+        aside{
+        .container-info{
+            .info{display: none;}
+        }
+    }}
+  }

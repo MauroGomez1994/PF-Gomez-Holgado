@@ -41,6 +41,7 @@ body{
         align-items: center;
         justify-content: center;
         margin-top: 10px;
+        padding: 5px;
 
         .marcas-img{display: flex;
             height: 150px;
@@ -90,6 +91,16 @@ body{
     }
 } 
 
+@media (max-width:350px){
+    body{
+        .contenedor-marcas{
+            .marcas-img{height: 20px;
+                gap: 1rem;
+            }
+        }
+    }
+} 
+
 
 @media (max-width:1200px){
     .contenedor-body{position: relative;
@@ -127,11 +138,36 @@ body{
 }
 }
 
+@media (max-width:660px){
+    .contenedor-body{position: relative;
+    width: 100%;
+    div{
+        .img-aviso{@include medidas (200px, 200px);
+        position: absolute;
+        top: 50px;
+        left: 10px;}
+        }
+}
+}
+
+
 @media (max-width:500px){
     .contenedor-body{position: relative;
     width: 100%;
     div{
         .img-aviso{@include medidas (150px, 150px);
+        position: absolute;
+        top: 25px;
+        left: 10px;}
+        }
+}
+}
+
+@media (max-width:350px){
+    .contenedor-body{position: relative;
+    width: 100%;
+    div{
+        .img-aviso{@include medidas (100px, 100px);
         position: absolute;
         top: 25px;
         left: 10px;}

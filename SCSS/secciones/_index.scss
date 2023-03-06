@@ -14,7 +14,7 @@
   div{
     img{height: 700px;
         padding-top: 240px;
-        padding-left: 100px;}
+        padding-left: 50px;}
   }
 }
 
@@ -62,32 +62,70 @@ div {
         
 /*mediaqueries mobile, tablet y desktop*/
 
-@media (max-width:1500px){
-    .contenedor-acceder img{height: 450px; 
-    padding-left: 200px;
+@media screen and (max-width:1600px){
+    .contenedor-acceder{
+        div{
+            img{height: 450px; 
+                padding-left: 200px;
+                }
+        }   
     }
 }
 
 @media (max-width:1000px){
-    .contenedor-acceder img{height: 370px; 
-    padding-left: 100px;
+    .contenedor-acceder{
+        div{
+            img{height: 400px; 
+            padding-left: 100px;
+            }
+
+        }
+    } 
+}
+
+@media screen and (max-width:700px){
+    .contenedor-acceder{
+        div{
+            img{height: 350px; 
+                padding-left: 100px;
+                }
+        }   
     }
 }
 
-@media (max-width:600px){
-    .contenedor-acceder img{height: 350px; 
-    padding-left: 100px;
+
+@media screen and (max-width:500px){
+    .contenedor-acceder{
+        div{
+            img{height: 350px; 
+                padding-left: 60px;
+                }
+        }   
     }
 }
 
-@media (max-width:500px){
-    .contenedor-acceder img{height: 335px; 
-    padding-left: 90px;
+@media screen and (max-width:450px){
+    .contenedor-acceder{
+        div{
+            img{height: 320px; 
+                padding-left: 60px;
+                }
+        }   
+    }
+}
+
+@media screen and (max-width:350px){
+    .contenedor-acceder{
+        div{
+            img{height: 320px; 
+                padding-left: 5px;
+                }
+        }   
     }
 }
 
 @media (max-width:400px){
-    .contenedor-acceder img{height: 335px; 
+    .contenedor-acceder img{height: 320px; 
     padding-left: 30px;
     }
 }
@@ -96,5 +134,38 @@ div {
 
     .boton-acceder{font-size: 1rem;
         top: 65%;
+    }
+}
+
+/*mediaqueries mobile, tablet y desktop del boton acceder*/
+
+
+@media screen and (max-width:500px){
+    body{
+        .contenedor-acceder{
+            div{
+                a{
+                    .boton-acceder{
+                        left: 35%;
+                        top: 70%;
+                    }
+                }
+            }   
+        }
+    }
+}
+
+@media screen and (max-width:300px){
+    body{
+        .contenedor-acceder{
+            div{
+                a{
+                    .boton-acceder{
+                        left: 25%;
+                        top: 70%;
+                    }
+                }
+            }   
+        }
     }
 }
